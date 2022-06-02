@@ -10,6 +10,7 @@
     background-color: #2b2d42;
     height: 500px;
     width: 100vw;
+    border: 1px solid white;
   }
   .hero {
     background-color: #14213d;
@@ -53,6 +54,12 @@
   .hero-text {
     margin-left: 2em;
   }
+  .hero-text h1{
+      font-size: 4em;
+  }
+  .hero-text p{
+      font-size: 1.5em;
+  }
   
   .socials {
     margin-right: 2em;
@@ -61,7 +68,14 @@
     justify-content: space-between;
   }
   .social {
-    padding: 1em;
+    padding: 1.5em;
+    width: 2em;
+    transition: all 200ms ease-in-out;
+  }
+
+  .social svg:hover{
+      fill: yellow;
+      transform: translateY(-0.5em);
   }
   
   @media (min-width: 701px) and (max-width: 856px) {
@@ -82,6 +96,14 @@
     }
     ul {
       align-items: flex-end;
+    }
+    .hero-area{
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 1em; */
+    }
+    .socials{
+        display: none;
     }
   }
   
