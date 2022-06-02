@@ -15,6 +15,7 @@
   .hero {
     background-color: #14213d;
     height: 100vh;
+    border: none;
   }
   footer {
     background-color: black;
@@ -49,6 +50,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .ham{
+      display: none;
+  }
+  .ham img{
+      margin-top: 0.5em;
+    width: 45px;
+    background-color: white;
+    outline: none;
+    border-radius: 6px 8px;
   }
   
   .hero-text {
@@ -88,22 +100,33 @@
   @media (max-width: 700px) {
     nav,
     ul {
-      flex-direction: column;
+      /* flex-direction: column; */
     }
     nav {
       justify-content: space-between;
       /* align-items: flex-start; */
     }
     ul {
-      align-items: flex-end;
+      /* align-items: flex-end; */
+      display: none;
     }
     .hero-area{
         align-items: center;
         justify-content: center;
-        /* margin-top: 1em; */
+        margin:2em;
+        margin-top: 9em;
+        /* margin-left: 0; */
+    }
+
+    .hero-text{
+        margin-left: 0;
     }
     .socials{
         display: none;
+    }
+    .ham{
+        display: block;
+        margin-right: 1em;
     }
   }
   
