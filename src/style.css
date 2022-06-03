@@ -1,148 +1,166 @@
 * {
-    /* box-sizing: border-box; */
-    margin: 0;
-    padding: 0;
-    color: white;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+section {
+  background-color: #2b2d42;
+  height: 500px;
+  width: 100vw;
+  border: 1px solid white;
+}
+.hero {
+  background-color: #14213d;
+  height: 100vh;
+  border: none;
+}
+footer {
+  background-color: black;
+  height: 400px;
+}
+
+h1 {
+  font-size: 3em;
+}
+nav {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  /* margin: 0 1em; */
+}
+
+#logo.shoLogo {
+  display: none;
+}
+
+ul {
+  font-size: 2.5em;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+ul.show {
+  display: block;
+}
+
+li a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 1em;
+}
+
+.hero-area {
+  margin-top: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .ham{
+    display: none;
+}
+.ham img{
+    margin-top: 0.5em;
+  width: 45px;
+  background-color: white;
+  outline: none;
+  border-radius: 6px 8px;
+} */
+
+.hamburger {
+  display: none;
+}
+.hamburger:focus {
+  outline: 0;
+}
+
+.hero-text {
+  margin-left: 2em;
+}
+.hero-text h1 {
+  font-size: 4em;
+}
+.hero-text p {
+  font-size: 1.5em;
+}
+
+.socials {
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.social {
+  padding: 1.5em;
+  width: 2em;
+  transition: all 200ms ease-in-out;
+}
+
+.social svg:hover {
+  fill: yellow;
+  transform: translateY(-0.5em);
+}
+
+@media (min-width: 701px) and (max-width: 856px) {
+  li a {
+    font-size: 0.8em;
+    padding: 15px;
   }
-  section {
-    background-color: #2b2d42;
-    height: 500px;
-    width: 100vw;
-    border: 1px solid white;
-  }
-  .hero {
-    background-color: #14213d;
-    height: 100vh;
-    border: none;
-  }
-  footer {
-    background-color: black;
-    height: 400px;
-  }
-  
-  h1 {
-    font-size: 3em;
+}
+
+@media screen and (max-width: 700px) {
+  nav,
+  ul {
+    /* flex-direction: column; */
   }
   nav {
-    font-size: 1em;
-    display: flex;
     justify-content: space-between;
-    padding: 1em;
-    /* margin: 0 1em; */
-  }
-  ul {
-    font-size: 2.5em;
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
+    /* align-items: flex-start; */
   }
 
-  ul.show{
-    display: block;
-  }
-
-  li a {
-    text-decoration: none;
-    padding: 20px;
-    font-size: 1em;
-  }
-  
   .hero-area {
-    margin-top: 10em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-  }
-
-  /* .ham{
-      display: none;
-  }
-  .ham img{
-      margin-top: 0.5em;
-    width: 45px;
-    background-color: white;
-    outline: none;
-    border-radius: 6px 8px;
-  } */
-  
-  .hamburger{
-   display: none;
-  }
-  .hamburger:focus{
-    outline: 0;
+    justify-content: center;
+    margin: 2em;
+    margin-top: 9em;
+    /* margin-left: 0; */
   }
 
   .hero-text {
-    margin-left: 2em;
+    margin-left: 0;
   }
-  .hero-text h1{
-      font-size: 4em;
-  }
-  .hero-text p{
-      font-size: 1.5em;
-  }
-  
   .socials {
-    margin-right: 2em;
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 3em;
+    /* padding-left: 1em; */
+    margin: 5px;
+    align-self: flex-end;
+  }
+  nav {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    background-color: #22223b;
   }
-  .social {
-    padding: 1.5em;
-    width: 2em;
-    transition: all 200ms ease-in-out;
+  ul {
+    /* align-items: flex-end; */
+    display: none;
+    background-color: #4a4e69;
+    margin: 0;
   }
-
-  .social svg:hover{
-      fill: yellow;
-      transform: translateY(-0.5em);
+  .logo {
+    display: none;
   }
-  
-  @media (min-width: 701px) and (max-width: 856px) {
-    li a {
-      font-size: 0.8em;
-      padding: 15px;
-    }
-  }
-  
-  @media (max-width: 700px) {
-    nav,
-    ul {
-      /* flex-direction: column; */
-    }
-    nav {
-      justify-content: space-between;
-      /* align-items: flex-start; */
-    }
-    ul {
-      /* align-items: flex-end; */
-      display: none;
-    }
-    .hero-area{
-        align-items: center;
-        justify-content: center;
-        margin:2em;
-        margin-top: 9em;
-        /* margin-left: 0; */
-    }
-
-    .hero-text{
-        margin-left: 0;
-    }
-    .socials{
-        display: none;
-     }
-    
-     .hamburger{
-       display: block;
-       border: 0;
-       background-color: transparent;
-       color: white;
-       font-size: 3em;
-     }
-  }
-  
+}
