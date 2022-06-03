@@ -38,6 +38,11 @@
     justify-content: space-around;
     list-style-type: none;
   }
+
+  ul.show{
+    display: block;
+  }
+
   li a {
     text-decoration: none;
     padding: 20px;
@@ -52,7 +57,7 @@
     align-items: center;
   }
 
-  .ham{
+  /* .ham{
       display: none;
   }
   .ham img{
@@ -61,8 +66,15 @@
     background-color: white;
     outline: none;
     border-radius: 6px 8px;
-  }
+  } */
   
+  .hamburger{
+   display: none;
+  }
+  .hamburger:focus{
+    outline: 0;
+  }
+
   .hero-text {
     margin-left: 2em;
   }
@@ -123,10 +135,14 @@
     }
     .socials{
         display: none;
-    }
-    .ham{
-        display: block;
-        margin-right: 1em;
-    }
+     }
+    
+     .hamburger{
+       display: block;
+       border: 0;
+       background-color: transparent;
+       color: white;
+       font-size: 3em;
+     }
   }
   
