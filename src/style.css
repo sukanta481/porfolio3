@@ -136,7 +136,7 @@ h2 {
   font-size: 4em;
   color:black;
 }
-.container {
+.sub-container {
   display: flex;
   justify-content: space-around;
   padding: 80px 170px;
@@ -294,7 +294,7 @@ h2 {
   footer p{
     font-size: 1.5em;
   }
-  .container {
+  .sub-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -322,7 +322,7 @@ h2 {
     padding: 50px 0;
   }
 
-  .container{
+  .sub-container{
     padding: 20px;
   }
 
@@ -366,7 +366,7 @@ h2 {
 
 /* for iPads and Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
-  .container{
+  .sub-container{
     padding: 80px;
   }
   .information,.headshot-container{
