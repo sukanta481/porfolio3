@@ -109,10 +109,13 @@ li a {
 }
 
 .socials {
-  margin-right: 2em;
+  margin-right: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.social-div{
+  padding:10px;
 }
 .social {
   padding: 1.5em;
@@ -289,6 +292,7 @@ h2 {
   } 
 
   footer h2{
+    text-decoration: underline;
     font-size: 2.5em;
   }
   footer p{
@@ -361,6 +365,9 @@ h2 {
   .footer-socials .social{
     padding: 0;
     width: 0;
+  }
+  .social-div{
+    padding: 0;
   }
 }
 
