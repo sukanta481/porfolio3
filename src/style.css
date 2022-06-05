@@ -251,10 +251,7 @@ h2 {
     padding: 0;
   }
 
-  footer {
-    height: 200px;
-    padding: 99px 0px;
-  }
+
 
   .hamburger {
     display: block;
@@ -276,7 +273,7 @@ h2 {
 
   .hero-area{
     margin: 0;
-    margin-top: 3em;
+    margin-top: 5em;
     margin-left: 1em;
   }
   .hero-text h1{
@@ -285,6 +282,12 @@ h2 {
   .hero-text p{
     font-size: 2.5em;
   }
+
+  footer {
+    height: 200px;
+    padding: 80px 0px;
+  } 
+
   footer h2{
     font-size: 2.5em;
   }
@@ -353,6 +356,7 @@ h2 {
   .footer-socials{
     display: flex;
     justify-content: space-around;
+    margin-top: 8em;
   }
   .footer-socials .social{
     padding: 0;
