@@ -133,6 +133,7 @@ li a {
   box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
 
 }
+/* .dark function */
 .dark{
   background-color: black;
 }
@@ -140,6 +141,15 @@ li a {
 .dark .flicker{
   transform: translateX(40px);
   
+}
+.dark h2{
+  color: white;
+}
+.dark p{
+  color: white;
+}
+.dark .sub-section{
+  background-color: rgb(75, 75, 75);
 }
 
 
@@ -228,6 +238,7 @@ h2 {
   font-weight: 300;
   padding: 10px;
 }
+
 
 .project-link{
   text-decoration: none;
