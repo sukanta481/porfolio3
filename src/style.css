@@ -4,6 +4,7 @@
   padding: 0;
   color: white;
   text-decoration: none;
+  transition: 0.3s;
   font-family: "Roboto", sans-serif;
 }
 section {
@@ -11,6 +12,9 @@ section {
 
   /* width: 100vw; */
   /* border: 1px solid white; */
+}
+.dark section{
+  background-color: black;
 }
 
 .sub-section {
@@ -117,6 +121,7 @@ li a {
   left: 5px;
   box-shadow: inset 4px 4px 4px rgb(245, 243, 243),
               inset -4px -4px 4px rgb(136, 133, 133);
+  transition: 300ms;
 }
 .moon{
   width: 20px;
@@ -129,7 +134,12 @@ li a {
 
 }
 .dark{
-  background-color: rgb(57, 57, 57);
+  background-color: black;
+}
+
+.dark .flicker{
+  transform: translateX(40px);
+  
 }
 
 
@@ -259,7 +269,7 @@ h2 {
   }
   nav {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction:row;
     background-color: #22223b;
   }
   ul {
@@ -267,10 +277,16 @@ h2 {
     display: none;
     background-color: #22223b;
     margin: 0;
-    padding: 10px 20px;
+    padding: 15px 10px;
+    position: absolute;
+    top: 65px;
+    width: 95.2%;
   }
   .logo {
     display: none;
+  }
+  .switch{
+    top: 11px;  
   }
 }
 
@@ -283,7 +299,6 @@ h2 {
     top: 0;
     right: 0;
     display: flex;
-    flex-direction: column-reverse;
     background-color: #22223b;
     width: 100%;
     padding: 0;
