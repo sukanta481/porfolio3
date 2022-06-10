@@ -306,7 +306,7 @@ h2 {
     display: none;
   }
   .switch{
-    top: 11px;  
+    top: 0;  
   }
   .project-container{
     flex-direction: column;
